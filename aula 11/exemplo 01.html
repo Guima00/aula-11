@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>aula 11 exemplo 1</title>
+    <link rel="stylesheet" href="exemplo 01.css"/>
+</head>
+<body>
+    <h1 style="font-size: 1em;">Aula 11 exemplo</h1>
+    <ul class="preparo">
+        <li id="i01" class="fruta">Pêra</li>
+        <li id="i02" class="fruta">Uva</li>
+        <li id="i03" class="fruta">maçã</li>
+        <li id="i04" class="legume">quiabo</li>
+        <li id="i04" class="fruta">tomate</li>
+    </ul>
+    <ol class="preparo">
+        <li>Lave os ingredientes</li>
+        <li>corte as frutas em cubos</li>
+    </ol>
+    <p class="fruta">coma menos doces!</p>
+    <script>
+        var liuva=document.querySelector("#i02");
+        console.log(liuva.style);
+        var tipo = document.createElement("span");
+        tipo.textContent = " roxa";
+        liuva.appendChild(tipo);
+        tipo.addEventListener('click',function(e){
+            e.target.textContent = " verde"
+            e.target.style.color= "green";
+        });
+    </script>
+
+</body>
+</html>

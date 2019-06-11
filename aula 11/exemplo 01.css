@@ -1,0 +1,21 @@
+h1{
+    color:blue;
+}
+li{
+    font-size: 1.2em;
+}
+#i02{
+    color:darkmagenta;
+}
+li.fruta{
+    color: gold;
+}
+li.legume{
+    color:green;
+}
+ol>li{
+    font-size: 2em;
+}
+.preparo li{
+    color:darkgray;
+}
